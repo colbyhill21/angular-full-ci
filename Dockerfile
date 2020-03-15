@@ -11,4 +11,5 @@ LABEL "homepage"="https://github.com/colbyhill21/angular-full-ci/"
 LABEL "maintainer"="Colby Hill <colbyahill21@gmail.com>"
 
 ADD entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
