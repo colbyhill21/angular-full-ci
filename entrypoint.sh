@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 npm install
-npm install @angular/cli
+npm install -g @angular/cli --latest
 ng build --prod
