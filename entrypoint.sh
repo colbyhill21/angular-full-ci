@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 echo "\n**Installing Dependencies**\n"
 npm install
