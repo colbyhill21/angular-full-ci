@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM debian:stable
 
 LABEL "maintainer"="Colby Hill <colbyahill21@gmail.com>"
 
