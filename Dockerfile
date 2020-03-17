@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM ubuntu:18.04
 
 LABEL "maintainer"="Colby Hill <colbyahill21@gmail.com>"
 
