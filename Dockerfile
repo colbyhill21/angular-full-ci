@@ -1,9 +1,8 @@
-FROM debian:stable
-
+FROM alpine:latest
 LABEL "maintainer"="Colby Hill <colbyahill21@gmail.com>"
 
-RUN curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-RUN sudo apt install nodejs
+RUN apk add nodejs
+
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
