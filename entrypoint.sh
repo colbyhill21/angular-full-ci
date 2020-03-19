@@ -15,3 +15,6 @@ npm install
 
 echo "\n**Building Project**\n"
 ng build --prod
+
+echo "\n**Running Unit Tests**\n"
+npm test:ci
