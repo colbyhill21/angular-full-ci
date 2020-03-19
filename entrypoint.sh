@@ -1,11 +1,18 @@
 #!/bin/sh
 
+testcommand="$INPUT_TESTCOMMAND"
+mocha="$INPUT_MOCHA"
+
 echo "\n**Auditing Packages**\n"
 npm audit
 
 echo "\n**Installing Angular CLI**\n"
 npm install -g @angular/cli --latest
 ng config -g cli.warnings.versionMismatch false
+
+if [ "$mocha" = "true" ]; then
+    npm i mocha
+fi
 
 echo "\n**Linting Code**\n"
 ng lint
@@ -17,4 +24,4 @@ echo "\n**Building Project**\n"
 ng build --prod
 
 echo "\n**Running Unit Tests**\n"
-npm run test:ci
+npm $testcommand
