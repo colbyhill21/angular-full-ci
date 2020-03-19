@@ -1,0 +1,16 @@
+name: Angular Full CI
+description: Run a full CI workflow on Angular projects.
+author: colbyhill21
+branding:
+  icon: 'terminal'
+  color: 'red'
+inputs:
+  testcommand:
+    description: Command to run tests on your project, do not prepend with "npm", it is already included.
+    required: true
+  mocha:
+    description: Set to true in order to run mocha tests. This option will install mocha on the image.
+    required: false
+runs:
+  using: docker
+  image: Dockerfile
