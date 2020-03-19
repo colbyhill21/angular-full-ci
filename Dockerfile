@@ -1,4 +1,4 @@
-FROM node:latest
+FROM buildkite/puppeteer:latest
 
 LABEL "com.github.actions.name"="angular-full-ci"
 LABEL "com.github.actions.description"="Run full CI workflow for Angular projects"
