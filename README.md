@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Angular Full CI
-        uses: colbyhill21/angular-full-ci/@master
+        uses: colbyhill21/angular-full-ci/@v1.0
         with:
           testcommand: run test:ci
           mocha: true
