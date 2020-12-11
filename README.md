@@ -27,6 +27,7 @@ NOTE: I suggest using a specific configuration for testing in the CI environment
 
 - `testcommand`: Required. The command to run your tests, do not include "npm" it is already included. The importance of this is so that any configuration options can be used. My suggestion is to create a configuration that uses 
 - `mocha`: Not required. 
+- `working_directory`: Optional. Directory to run the tests from (for when your angular project resides in a subdirectory) 
 
 ## License
 Scripts and documentation in this project are released under the MIT license.
