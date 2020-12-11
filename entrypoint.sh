@@ -2,7 +2,7 @@
 
 testcommand="$INPUT_TESTCOMMAND"
 mocha="$INPUT_MOCHA"
-working_dir="${INPUT_WORKING_DIRECTORY}"
+working_dir="$INPUT_WORKING_DIRECTORY"
 
 if [ -n "$working_dir" ]; then
     cd $working_dir
