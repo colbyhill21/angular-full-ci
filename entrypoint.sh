@@ -2,6 +2,11 @@
 
 testcommand="$INPUT_TESTCOMMAND"
 mocha="$INPUT_MOCHA"
+working_dir="$INPUT_WORKING_DIRECTORY"
+
+if [ -n "$working_dir" ]; then
+    cd $working_dir
+fi
 
 echo "\n**Auditing Packages**\n"
 npm audit
